@@ -1,5 +1,6 @@
 #Material Design风格的Dialog
 *把Material Design风格的Dialog兼容到API8*
+![](https://github.com/291700351/MaterialDesignDialog/blob/master/images/device-2016-05-27-231818.png)
 
 ###默认提供MaterialDialogNormal和MaterialDialogInput两个类型的Dialog，后期会陆续增加更多类型###
 
