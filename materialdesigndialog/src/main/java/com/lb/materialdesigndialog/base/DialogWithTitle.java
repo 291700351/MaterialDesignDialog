@@ -57,7 +57,7 @@ import com.lb.utils.SelectorUtil;
  * 时间：2016/5/27 14:42
  * 类描述：Material Design风格的对话框,具有标题，继承自该类可以扩展正文部分显示
  */
-public abstract class DialogWithTile extends DialogBase {
+public abstract class DialogWithTitle extends DialogBase {
     //===Desc:成员变量======================================================================================
     private ImageView iv_title;//title的图片
 
@@ -70,7 +70,7 @@ public abstract class DialogWithTile extends DialogBase {
     private TextView btn_p;//积极的按钮
 
     //===Desc:构造函数======================================================================================
-    public DialogWithTile(Context context) {
+    public DialogWithTitle(Context context) {
         super(context);
     }
 
@@ -213,7 +213,7 @@ public abstract class DialogWithTile extends DialogBase {
                 btn_m.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        listener.click(DialogWithTile.this, v);
+                        listener.click(DialogWithTitle.this, v);
                     }
                 });
             }
@@ -236,7 +236,7 @@ public abstract class DialogWithTile extends DialogBase {
                 btn_n.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        listener.click(DialogWithTile.this, v);
+                        listener.click(DialogWithTitle.this, v);
                     }
                 });
             }
@@ -259,7 +259,7 @@ public abstract class DialogWithTile extends DialogBase {
                 btn_p.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        listener.click(DialogWithTile.this, v);
+                        listener.click(DialogWithTitle.this, v);
                     }
                 });
             }

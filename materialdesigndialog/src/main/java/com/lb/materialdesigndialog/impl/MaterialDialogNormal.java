@@ -37,10 +37,8 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.lb.dialog.R;
-import com.lb.materialdesigndialog.base.DialogWithTile;
+import com.lb.materialdesigndialog.base.DialogWithTitle;
 import com.lb.utils.ViewUtil;
-
-import org.w3c.dom.Text;
 
 /**
  * 项目名称：MaterialDesignDialog
@@ -49,7 +47,7 @@ import org.w3c.dom.Text;
  * 时间：2016/5/27 17:40
  * 类描述：项目提供的默认的Dialog显示，显示一个正常的Dialog
  */
-public class MaterialDialogNormal extends DialogWithTile {
+public class MaterialDialogNormal extends DialogWithTitle {
 
     //===Desc:成员变量======================================================================================
 
