@@ -1,0 +1,2 @@
+#Material Design风格的Dialog
+*把Material Design风格的Dialog兼容到API8*
