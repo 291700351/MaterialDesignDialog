@@ -172,6 +172,15 @@ public abstract class DialogBase {
     }
 
     /**
+     * 当前Dialog是否在显示
+     *
+     * @return 是否显示.true:显示，false:没有显示
+     */
+    public boolean isShowing() {
+        return null != dialog && dialog.isShowing();
+    }
+
+    /**
      * 给当前Dialog设置关闭之后的回调监听
      *
      * @param listener OnDialogDismissListener回调监听

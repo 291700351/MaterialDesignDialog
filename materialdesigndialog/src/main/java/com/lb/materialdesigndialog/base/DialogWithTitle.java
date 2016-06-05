@@ -46,7 +46,6 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.lb.utils.DrawableUtil;
-import com.lb.utils.LogUtil;
 import com.lb.utils.Screenutil;
 import com.lb.utils.SelectorUtil;
 
@@ -123,7 +122,6 @@ public abstract class DialogWithTitle extends DialogBase {
         //初始化积极按钮
         initBtn(btn_p = new TextView(context), bottomRoot);
 
-        LogUtil.e(this, "btn_m" + (btn_m == null));
         checkBottom();
         return bottomRoot;
     }

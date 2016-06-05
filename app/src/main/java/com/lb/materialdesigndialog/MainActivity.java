@@ -1,5 +1,6 @@
 package com.lb.materialdesigndialog;
 
+import android.app.ProgressDialog;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -8,6 +9,7 @@ import android.widget.Button;
 import com.lb.materialdesigndialog.base.DialogBase;
 import com.lb.materialdesigndialog.base.DialogWithTitle;
 import com.lb.materialdesigndialog.impl.MaterialDialogInput;
+import com.lb.materialdesigndialog.impl.MaterialDialogLoading;
 import com.lb.materialdesigndialog.impl.MaterialDialogNormal;
 import com.lb.utils.ToastUtil;
 import com.lb.utils.ViewUtil;
@@ -16,6 +18,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     //===Desc:成员变量===============================================================================================
     private Button btn_normal;//显示一个提醒Dialog的按钮
     private Button btn_input;//显示一个带输入框的dialog按钮的
+    private Button btn_loading;//显示加载的dialog
 
     //===Desc:复写父类的方法===============================================================================================
     @Override
@@ -27,7 +30,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         setListener();
 
-
     }
 
     //===Desc:本类使用的方法===============================================================================================
@@ -38,6 +40,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private void findView() {
         btn_normal = ViewUtil.findViewById(this, R.id.btn_normal);
         btn_input = ViewUtil.findViewById(this, R.id.btn_input);
+        btn_loading = ViewUtil.findViewById(this, R.id.btn_loading);
     }
 
     /**
@@ -46,6 +49,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private void setListener() {
         btn_normal.setOnClickListener(this);
         btn_input.setOnClickListener(this);
+        btn_loading.setOnClickListener(this);
     }
 
     //===Desc:点击事件的处理===============================================================================================
@@ -57,6 +61,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_input:
                 showInputDialog();
+                break;
+            case R.id.btn_loading:
+                showLoadingDialog();
                 break;
 
         }
@@ -124,9 +131,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
         });
 
+    }
+
+    /**
+     * 显示加载的dialog
+     */
+    private void showLoadingDialog() {
+        MaterialDialogLoading dialog = new MaterialDialogLoading(this);
+        dialog.setText("正在加载");
+        dialog.show();
 
     }
 
+    //===Desc:===============================================================================================
 
     /**
      * 显示一个Toast

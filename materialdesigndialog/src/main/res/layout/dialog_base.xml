@@ -24,13 +24,14 @@
             android:id="@+id/fl_base_content"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="20dp" />
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"/>
 
         <FrameLayout
             android:id="@+id/fl_base_bottom"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="20dp" />
+            />
 
     </LinearLayout>
 

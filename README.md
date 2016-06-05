@@ -2,6 +2,18 @@
 *把Material Design风格的Dialog兼容到API8*
 ![](https://github.com/291700351/MaterialDesignDialog/blob/master/images/device-2016-05-27-231818.png)![](https://github.com/291700351/MaterialDesignDialog/blob/master/images/device-2016-05-27-231925.png)
 
+###AndroidStudio使用###
+    dependencies {
+       compile 'com.lb:materialdesigndialog:1.0.0'
+    }
+
+##添加加载中的Dialog##
+
+    MaterialDialogLoading dialog = new MaterialDialogLoading(this);
+    dialog.setText("正在加载");
+    dialog.show();
+
+
 ###默认提供MaterialDialogNormal和MaterialDialogInput两个类型的Dialog，后期会陆续增加更多类型###
 
 - MaterialDialogNormal：*显示一个提醒的Dialog*

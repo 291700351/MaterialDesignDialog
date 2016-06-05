@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="color_dialog_bg">#FFFFFFFF</color>
+    <color name="color_dialog_content_text">#8a000000</color>
 </resources>
